@@ -1,0 +1,189 @@
+
+body{
+	background-color: #FAF8EF;
+	height: 100%;
+}
+
+h1, .score, .score2, .cell-2, .cell-4, h6 {
+	color: #776E65;
+	text-align: center;
+}
+h1 {
+	font-size: 4rem;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.gameLink{
+	text-decoration: none;
+	color: #776E62;
+}
+
+#board {
+	margin: 0 auto;
+}
+
+#board::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.score, .score2 {
+	width: 150px;
+	height: 50px;
+	background-color: #EEE4DA;
+	float: left;
+	border-radius: 5px;
+}
+
+.score2 {
+	margin-left: 10px;
+}
+
+.currentScore {
+	font-size: 20px;
+	padding-top: 5px;
+}
+
+#container {
+	width: 80vw;
+	height: 80vw;
+	margin: 10px auto;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	background: #BBADA0;
+}
+
+.cell {
+	width: 16vw;
+	height: 16vw;
+	margin-left: 3.2vw;
+	margin-top: 3.2vw;
+	line-height: 16vw;
+	text-align: center;
+	font-size: 1.5rem;
+	border-radius: 5px;
+	float: left;
+	background-color: rgba(238, 228, 218, 0.35);
+}
+
+#won, #lost {
+	line-height: 73.6vw;
+	border-radius: 5px;
+	font-size: 2rem;
+	display: none;
+	position: absolute;
+	padding: 3.2vw;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	text-align: center;
+}
+
+.cell-8, .cell-16, .cell-32, .cell-64,
+.cell-128, .cell-256, .cell-512, .cell-1024,
+.cell-2048 {
+	color: #F9F6F2;
+}
+
+.cell-2 {
+	background-color: #EEE4DA;
+}
+
+.cell-4 {
+	background-color: #EDE0C8;
+}
+
+.cell-8 {
+	background-color: #F2B179;
+}
+
+.cell-16 {
+	background-color: #F59563;
+}
+
+.cell-32 {
+	background-color: #F67C5F;
+}
+
+.cell-64 {
+	background-color: #F65E3B;
+}
+
+.cell-128 {
+	background-color: #EDCF72;
+	box-shadow: 0px 0px 30px 10px rgba(243, 215, 116, 0.24), 0px 0px 0px 1px rgba(255, 255, 255, 0.14) inset;
+}
+
+.cell-256 {
+	background-color: #EDCC61;
+	box-shadow: 0px 0px 30px 10px rgba(243, 215, 116, 0.318), 0px 0px 0px 1px rgba(255, 255, 255, 0.192) inset;
+}
+
+.cell-512 {
+	background-color: #EDC850;
+	box-shadow: 0px 0px 30px 10px rgba(243, 215, 116, 0.396), 0px 0px 0px 1px rgba(255, 255, 255, 0.24) inset;
+}
+
+.cell-1024 {
+	background-color: #EDC53F;
+	box-shadow: 0px 0px 30px 10px rgba(243, 215, 116, 0.475), 0px 0px 0px 1px rgba(255, 255, 255, 0.286) inset;
+	font-size: 1.25rem;
+}
+
+.cell-2048 {
+	background-color: #EDC22E;
+	box-shadow: 0px 0px 30px 10px rgba(243, 215, 116, 0.557), 0px 0px 0px 1px rgba(255, 255, 255, 0.333) inset;
+	font-size: 1.25rem;
+}
+
+
+
+
+
+
+
+@media (min-width: 56em) {
+	#board {
+		width: 320px;
+	}
+
+	.score, .score2 {
+		width: 150px;
+	}
+
+	.score2 {
+		margin-left: 10px;
+	}
+
+	#container {
+		width: 500px;
+		height: 500px;
+	}
+
+	.cell {
+		width: 100px;
+		height: 100px;
+		margin-left: 20px;
+		margin-top: 20px;
+		line-height: 100px;
+		font-size: 2.5rem;
+	}
+
+	.cell-1024, .cell-2048 {
+		font-size: 2rem;
+	}
+
+	#won, #lost {
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+		line-height: 460px;
+	}
+
+}
